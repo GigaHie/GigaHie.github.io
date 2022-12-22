@@ -1,0 +1,122 @@
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #444444;
+  color: white;
+}
+
+#burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  padding: 0 20px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #burger-menu {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #444444;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #444444;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #222222;
+}
+#social-media {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.youtube, .tiktok, .instagram {
+  font-size: 36px;
+  color: #444444;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.youtube:hover, .tiktok:hover, .instagram:hover {
+  color: #222222;
+}
+
+@media (max-width: 768px) {
+  #social-media {
+    flex-direction: column;
+  }
+  .youtube, .tiktok, .instagram {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+}
